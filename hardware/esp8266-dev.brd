@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -14,16 +14,16 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -71,8 +71,8 @@
 <layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -141,6 +141,45 @@
 <wire x1="45.72" y1="1.27" x2="48.26" y2="3.81" width="0" layer="20" curve="90"/>
 <wire x1="48.26" y1="3.81" x2="48.26" y2="5.08" width="0" layer="20"/>
 <wire x1="46.99" y1="49.53" x2="48.26" y2="48.26" width="0" layer="20" curve="-90"/>
+<text x="31.75" y="45.72" size="1.27" layer="21" font="vector" ratio="12" align="center-left">+3V3</text>
+<text x="31.75" y="43.18" size="1.27" layer="21" font="vector" ratio="12" align="center-left">RX</text>
+<text x="31.75" y="40.64" size="1.27" layer="21" font="vector" ratio="12" align="center-left">TX</text>
+<text x="31.75" y="38.1" size="1.27" layer="21" font="vector" ratio="12" align="center-left">16</text>
+<text x="31.75" y="35.56" size="1.27" layer="21" font="vector" ratio="12" align="center-left">2</text>
+<text x="31.75" y="33.02" size="1.27" layer="21" font="vector" ratio="12" align="center-left">0</text>
+<text x="31.75" y="30.48" size="1.27" layer="21" font="vector" ratio="12" align="center-left">GND</text>
+<wire x1="11.303" y1="45.72" x2="11.557" y2="45.72" width="0.508" layer="21"/>
+<wire x1="13.843" y1="45.72" x2="14.097" y2="45.72" width="0.508" layer="21"/>
+<wire x1="16.383" y1="45.72" x2="16.637" y2="45.72" width="0.508" layer="21"/>
+<wire x1="18.923" y1="45.72" x2="19.177" y2="45.72" width="0.508" layer="21"/>
+<wire x1="21.463" y1="45.72" x2="21.717" y2="45.72" width="0.508" layer="21"/>
+<wire x1="24.003" y1="45.72" x2="24.257" y2="45.72" width="0.508" layer="21"/>
+<wire x1="26.543" y1="45.72" x2="26.797" y2="45.72" width="0.508" layer="21"/>
+<wire x1="29.083" y1="45.72" x2="29.337" y2="45.72" width="0.508" layer="21"/>
+<wire x1="26.543" y1="27.94" x2="26.797" y2="27.94" width="0.508" layer="21"/>
+<wire x1="24.003" y1="27.94" x2="24.257" y2="27.94" width="0.508" layer="21"/>
+<wire x1="21.463" y1="27.94" x2="21.717" y2="27.94" width="0.508" layer="21"/>
+<wire x1="18.923" y1="27.94" x2="19.177" y2="27.94" width="0.508" layer="21"/>
+<wire x1="16.383" y1="27.94" x2="16.637" y2="27.94" width="0.508" layer="21"/>
+<wire x1="13.843" y1="27.94" x2="14.097" y2="27.94" width="0.508" layer="21"/>
+<wire x1="11.303" y1="27.94" x2="11.557" y2="27.94" width="0.508" layer="21"/>
+<wire x1="8.763" y1="27.94" x2="9.017" y2="27.94" width="0.508" layer="21"/>
+<wire x1="6.223" y1="27.94" x2="6.477" y2="27.94" width="0.508" layer="21"/>
+<wire x1="3.683" y1="27.94" x2="3.937" y2="27.94" width="0.508" layer="21"/>
+<wire x1="29.21" y1="27.94" x2="30.48" y2="29.21" width="0.508" layer="21" curve="90"/>
+<wire x1="31.115" y1="22.225" x2="47.625" y2="22.225" width="0.508" layer="21" style="shortdash"/>
+<wire x1="30.988" y1="22.225" x2="47.498" y2="22.225" width="0.508" layer="22" style="shortdash"/>
+<text x="37.592" y="15.748" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">+3V3</text>
+<text x="31.496" y="17.78" size="1.016" layer="21" font="vector" ratio="12" align="center-right">GND</text>
+<text x="40.64" y="16.256" size="1.016" layer="21" font="vector" ratio="12" rot="SR270" align="center-left">TX</text>
+<text x="43.18" y="16.256" size="1.016" layer="21" font="vector" ratio="12" rot="SR270" align="center-left">RX</text>
+<text x="31.496" y="26.67" size="1.016" layer="21" font="vector" ratio="12" align="center-right">GND</text>
+<text x="37.338" y="28.702" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">+3V3</text>
+<text x="40.64" y="28.702" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">TX</text>
+<text x="43.18" y="28.702" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">RX</text>
+<text x="33.02" y="8.636" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">ISP
+3v3</text>
+<text x="20.32" y="48.006" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">github.com/JustgeekDE/ESP8266-devBoard</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -618,6 +657,30 @@ type 0204, grid 7.5 mm</description>
 </package>
 </packages>
 </library>
+<library name="p.peter-doc">
+<packages>
+<package name="LOGO-JUSTGEEK-XXXS">
+<circle x="0" y="0" radius="1.5" width="0.16" layer="21"/>
+<wire x1="0" y1="-0.1" x2="-0.3" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="0" y1="-0.1" x2="0.3" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="0" y1="-0.1" x2="0" y2="-1.5" width="0.16" layer="21"/>
+<wire x1="-1.1" y1="0.3" x2="0" y2="0.3" width="0.16" layer="21"/>
+<wire x1="0" y1="0.3" x2="1.1" y2="0.3" width="0.16" layer="21"/>
+<wire x1="0" y1="1.5" x2="0" y2="0.3" width="0.16" layer="21"/>
+<wire x1="-1.1" y1="-0.1" x2="-0.9" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="-0.9" y1="-0.1" x2="-0.7" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="0.7" y1="-0.1" x2="0.9" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="0.9" y1="-0.1" x2="1.1" y2="-0.1" width="0.16" layer="21"/>
+<wire x1="-0.9" y1="-0.1" x2="-1.1" y2="-1" width="0.16" layer="21"/>
+<wire x1="0.9" y1="-0.1" x2="1.1" y2="-1" width="0.16" layer="21"/>
+<polygon width="0.16" layer="21">
+<vertex x="0" y="-1.1"/>
+<vertex x="-0.3" y="-0.7"/>
+<vertex x="0.3" y="-0.7"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -848,17 +911,19 @@ design rules under a new name.</description>
 <element name="UC" library="SparkFun" package="DIP08" value="ATTINY85" x="33.02" y="7.62" smashed="yes" rot="R270">
 <attribute name="VALUE" x="34.29" y="7.62" size="1.27" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="SJ1" library="jumper" package="SJ" value="" x="33.02" y="5.08" rot="MR90"/>
+<element name="SJ1" library="jumper" package="SJ" value="" x="33.02" y="5.08" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="33.02" y="5.4801" size="0.02" layer="28" rot="MR90"/>
+</element>
 <element name="CON1" library="p.peter-connectors" package="PN61729-S" value="USBB-SOCKET" x="3.81" y="10.16" smashed="yes" rot="R270"/>
 <element name="RF1" library="p.peter-periphery" package="ESP8266-ESP-01-NOSILK" value="" x="44.45" y="34.29" smashed="yes" rot="R180">
 <attribute name="VALUE" x="40.45" y="34.29" size="0.8" layer="27" font="vector" ratio="12" rot="SR90" align="center"/>
 </element>
 <element name="R4" library="rcl" package="0204/7" value="10k" x="39.37" y="34.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.8686" y="30.988" size="1.016" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="NAME" x="39.3446" y="40.132" size="1.016" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
 <attribute name="VALUE" x="39.3446" y="33.6804" size="1.27" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="R6" library="rcl" package="0204/7" value="10k" x="36.83" y="34.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.7726" y="30.988" size="1.016" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="NAME" x="36.8046" y="40.132" size="1.016" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
 <attribute name="VALUE" x="36.8046" y="33.6804" size="1.27" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="H1" library="holes" package="3,2" value="MOUNT-HOLE3.2" x="5.08" y="44.45"/>
@@ -883,6 +948,7 @@ design rules under a new name.</description>
 </element>
 <element name="CON10" library="p.peter-connectors" package="PINHEADER-100MIL-1X7-NOSILK" value="" x="30.48" y="38.1" smashed="yes" rot="R270"/>
 <element name="CON3" library="p.peter-connectors" package="PINHEADER-100MIL-1X8-NOSILK" value="" x="19.05" y="43.18" smashed="yes"/>
+<element name="U$3" library="p.peter-doc" package="LOGO-JUSTGEEK-XXXS" value="" x="43.434" y="45.974" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1035,10 +1101,9 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="13.97" x2="34.29" y2="11.43" width="0.508" layer="1"/>
 <wire x1="38.1" y1="17.78" x2="38.1" y2="26.67" width="0.508" layer="1"/>
 <wire x1="36.83" y1="11.43" x2="34.29" y2="11.43" width="0.508" layer="1"/>
-<wire x1="34.29" y1="11.43" x2="33.02" y2="10.16" width="0.508" layer="1"/>
-<wire x1="33.02" y1="10.16" x2="33.02" y2="9.144" width="0.508" layer="1"/>
-<via x="33.02" y="9.144" extent="1-16" drill="0.508"/>
-<wire x1="33.02" y1="9.144" x2="33.02" y2="5.842" width="0.508" layer="16"/>
+<wire x1="34.29" y1="11.43" x2="33.02" y2="11.43" width="0.508" layer="1"/>
+<via x="33.02" y="11.43" extent="1-16" drill="0.508"/>
+<wire x1="33.02" y1="11.43" x2="33.02" y2="5.842" width="0.508" layer="16"/>
 <contactref element="RF1" pad="VCC"/>
 <contactref element="R4" pad="2"/>
 <wire x1="38.1" y1="27.432" x2="38.608" y2="27.94" width="0.508" layer="16"/>
@@ -1223,4 +1288,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
