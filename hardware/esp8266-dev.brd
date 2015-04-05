@@ -179,7 +179,11 @@
 <text x="43.18" y="28.702" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">RX</text>
 <text x="33.02" y="8.636" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">ISP
 3v3</text>
-<text x="20.32" y="48.006" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">github.com/JustgeekDE/ESP8266-devBoard</text>
+<text x="18.288" y="48.26" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="center">github.com/JustgeekDE/ESP8266-devBoard</text>
+<text x="43.434" y="41.656" size="1.016" layer="21" font="vector" ratio="12" rot="SR0" align="center">FLASH</text>
+<text x="34.29" y="47.498" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="top-left">ESP 8266
+dev board
+v0.1</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -948,7 +952,7 @@ design rules under a new name.</description>
 </element>
 <element name="CON10" library="p.peter-connectors" package="PINHEADER-100MIL-1X7-NOSILK" value="" x="30.48" y="38.1" smashed="yes" rot="R270"/>
 <element name="CON3" library="p.peter-connectors" package="PINHEADER-100MIL-1X8-NOSILK" value="" x="19.05" y="43.18" smashed="yes"/>
-<element name="U$3" library="p.peter-doc" package="LOGO-JUSTGEEK-XXXS" value="" x="43.434" y="45.974" rot="MR0"/>
+<element name="U$3" library="p.peter-doc" package="LOGO-JUSTGEEK-XXXS" value="" x="33.528" y="44.704" rot="MR90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -975,12 +979,12 @@ design rules under a new name.</description>
 <wire x1="42.672" y1="28.956" x2="33.02" y2="28.956" width="0.508" layer="16"/>
 <wire x1="43.18" y1="30.48" x2="43.942" y2="30.48" width="0.508" layer="1"/>
 <wire x1="43.942" y1="30.48" x2="44.45" y2="30.988" width="0.508" layer="1"/>
-<wire x1="44.45" y1="30.988" x2="44.45" y2="43.434" width="0.508" layer="1"/>
+<wire x1="44.45" y1="30.988" x2="44.45" y2="42.164" width="0.508" layer="1"/>
 <wire x1="39.93" y1="43.47" x2="39.878" y2="43.434" width="0.508" layer="16"/>
-<wire x1="39.878" y1="43.434" x2="44.45" y2="43.434" width="0.508" layer="16"/>
+<wire x1="39.878" y1="43.434" x2="43.18" y2="43.434" width="0.508" layer="16"/>
+<wire x1="43.18" y1="43.434" x2="44.45" y2="43.434" width="0.508" layer="16"/>
 <wire x1="44.45" y1="43.434" x2="46.482" y2="43.434" width="0.508" layer="16"/>
 <wire x1="46.482" y1="43.434" x2="46.43" y2="43.47" width="0.508" layer="16"/>
-<via x="44.45" y="43.434" extent="1-16" drill="0.508"/>
 <contactref element="IC2" pad="2"/>
 <wire x1="13.97" y1="3.81" x2="14.224" y2="3.556" width="0.508" layer="1"/>
 <wire x1="14.224" y1="3.556" x2="21.082" y2="3.556" width="0.508" layer="1"/>
@@ -1035,6 +1039,10 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="28.956" x2="30.988" y2="28.956" width="0.508" layer="16"/>
 <wire x1="30.988" y1="28.956" x2="30.48" y2="29.464" width="0.508" layer="16"/>
 <wire x1="30.48" y1="29.464" x2="30.48" y2="30.48" width="0.508" layer="16"/>
+<wire x1="44.45" y1="42.164" x2="43.18" y2="43.434" width="0.508" layer="1"/>
+<wire x1="43.18" y1="43.434" x2="43.18" y2="45.72" width="0.508" layer="1"/>
+<via x="43.18" y="45.72" extent="1-16" drill="0.508"/>
+<wire x1="43.18" y1="45.72" x2="43.18" y2="43.434" width="0.508" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="UC" pad="2"/>
