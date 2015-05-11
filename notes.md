@@ -1,7 +1,8 @@
-#Parts to check
-- Reverse protection diode?
+- Uart to slow
+- multiple connections for IO
+- ISP default powered
+- Reverse uart
+- Check current draw on power
 
 
-#Connections
-- UART
-- ESP
+check IO
