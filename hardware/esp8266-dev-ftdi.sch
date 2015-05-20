@@ -2430,13 +2430,18 @@ https://github.com/JustgeekDE
 v0.1 (8e144a9ffe)
 </text>
 <text x="180.34" y="-7.62" size="2.54" layer="97" ratio="12">TODO:
-- Use correct LDO
 - Fuse
 - Footprints for 2mm V12, Breakoutboard
 - Prototype area with
--- LED
+-- LEDs
 -- BUTTON
--- Thermristor</text>
+-- Thermristor
+- Correct LEDs
+- Battery contacts
+- lengthen USB contacts
+- Hooks for rubber band
+- Hole for lanyard
+</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="55.88" y="38.1"/>
