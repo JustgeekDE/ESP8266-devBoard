@@ -3428,9 +3428,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="F1" library="p.peter-regulators" deviceset="FUSE" device="0805" value="500mA"/>
+<part name="SW-RESET" library="p.peter-passives" deviceset="SWITCH-DEFAULT_OFF" device="-2PIN"/>
 <part name="SW2" library="p.peter-passives" deviceset="SWITCH-DEFAULT_OFF" device="-2PIN"/>
 <part name="SW3" library="p.peter-passives" deviceset="SWITCH-DEFAULT_OFF" device="-2PIN"/>
-<part name="SW4" library="p.peter-passives" deviceset="SWITCH-DEFAULT_OFF" device="-2PIN"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="R9" library="p.peter-rcl" deviceset="R-EU_" device="R0603" value="2k"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
@@ -3562,9 +3562,9 @@ v0.1 (8e144a9ffe)
 <attribute name="NAME" x="134.62" y="61.214" size="1.778" layer="95" ratio="12" align="center"/>
 <attribute name="VALUE" x="134.62" y="58.42" size="1.778" layer="96" ratio="12" align="center"/>
 </instance>
-<instance part="SW2" gate="S$1" x="43.18" y="-38.1"/>
-<instance part="SW3" gate="S$1" x="38.1" y="-71.12"/>
-<instance part="SW4" gate="S$1" x="38.1" y="-78.74"/>
+<instance part="SW-RESET" gate="S$1" x="43.18" y="-38.1"/>
+<instance part="SW2" gate="S$1" x="38.1" y="-71.12"/>
+<instance part="SW3" gate="S$1" x="38.1" y="-78.74"/>
 <instance part="GND22" gate="1" x="22.86" y="-45.72"/>
 <instance part="R9" gate="G$1" x="25.4" y="-71.12"/>
 <instance part="GND23" gate="1" x="15.24" y="-83.82"/>
@@ -3720,7 +3720,7 @@ v0.1 (8e144a9ffe)
 <wire x1="190.5" y1="104.14" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW2" gate="S$1" pin="P$1"/>
+<pinref part="SW-RESET" gate="S$1" pin="P$1"/>
 <wire x1="38.1" y1="-38.1" x2="22.86" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-38.1" x2="22.86" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -3900,7 +3900,7 @@ v0.1 (8e144a9ffe)
 <wire x1="60.96" y1="-71.12" x2="58.42" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-71.12" x2="58.42" y2="-63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="-63.5" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="SW3" gate="S$1" pin="P$2"/>
+<pinref part="SW2" gate="S$1" pin="P$2"/>
 <wire x1="43.18" y1="-71.12" x2="58.42" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="58.42" y="-71.12"/>
 </segment>
@@ -3933,7 +3933,7 @@ v0.1 (8e144a9ffe)
 <wire x1="63.5" y1="-78.74" x2="53.34" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-78.74" x2="53.34" y2="-63.5" width="0.1524" layer="91"/>
 <label x="53.34" y="-63.5" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="SW4" gate="S$1" pin="P$2"/>
+<pinref part="SW3" gate="S$1" pin="P$2"/>
 <wire x1="43.18" y1="-78.74" x2="53.34" y2="-78.74" width="0.1524" layer="91"/>
 <junction x="53.34" y="-78.74"/>
 </segment>
@@ -4113,7 +4113,7 @@ v0.1 (8e144a9ffe)
 <pinref part="Q1" gate="G$1" pin="COLLECTOR"/>
 <wire x1="55.88" y1="-40.64" x2="55.88" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="55.88" y="-38.1"/>
-<pinref part="SW2" gate="S$1" pin="P$2"/>
+<pinref part="SW-RESET" gate="S$1" pin="P$2"/>
 <wire x1="55.88" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4237,13 +4237,13 @@ v0.1 (8e144a9ffe)
 <net name="N$20" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="SW3" gate="S$1" pin="P$1"/>
+<pinref part="SW2" gate="S$1" pin="P$1"/>
 <wire x1="30.48" y1="-71.12" x2="33.02" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="SW4" gate="S$1" pin="P$1"/>
+<pinref part="SW3" gate="S$1" pin="P$1"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="-78.74" x2="33.02" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
