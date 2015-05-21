@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2430,18 +2430,17 @@ https://github.com/JustgeekDE
 v0.1 (8e144a9ffe)
 </text>
 <text x="180.34" y="-7.62" size="2.54" layer="97" ratio="12">TODO:
-- Fuse
+- Fuse with jumper
 - Footprints for 2mm V12, Breakoutboard
 - Prototype area with
 -- LEDs
 -- BUTTON
--- Thermristor
 - Correct LEDs
 - Battery contacts
 - lengthen USB contacts
 - Hooks for rubber band
 - Hole for lanyard
-</text>
+- selector for power</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="55.88" y="38.1"/>
