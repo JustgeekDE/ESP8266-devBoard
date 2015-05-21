@@ -1137,25 +1137,6 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <wire x1="-5.3" y1="-6.25" x2="4.75" y2="-6.25" width="0.1" layer="51"/>
 <text x="1.5" y="0" size="1.27" layer="25" font="vector" ratio="12" rot="R90" align="center">&gt;NAME</text>
 </package>
-<package name="PN61729-S">
-<description>&lt;b&gt;USB connector&lt;/b&gt; with shield&lt;p&gt;</description>
-<wire x1="-5.9" y1="5.6" x2="-5.9" y2="-10.15" width="0.254" layer="51"/>
-<wire x1="-5.9" y1="-10.15" x2="5.9" y2="-10.15" width="0.254" layer="21"/>
-<wire x1="5.9" y1="-10.15" x2="5.9" y2="5.6" width="0.254" layer="51"/>
-<wire x1="5.9" y1="5.6" x2="-5.9" y2="5.6" width="0.254" layer="21"/>
-<wire x1="-5.9" y1="-2.02" x2="-5.9" y2="-10.15" width="0.254" layer="21"/>
-<wire x1="5.9" y1="1.915" x2="5.9" y2="5.6" width="0.254" layer="21"/>
-<wire x1="-5.9" y1="5.6" x2="-5.9" y2="1.915" width="0.254" layer="21"/>
-<wire x1="5.9" y1="-10.15" x2="5.9" y2="-2.02" width="0.254" layer="21"/>
-<pad name="1" x="1.25" y="4.71" drill="0.95" shape="octagon"/>
-<pad name="2" x="-1.25" y="4.71" drill="0.95" shape="octagon"/>
-<pad name="3" x="-1.25" y="2.71" drill="0.95" shape="octagon"/>
-<pad name="4" x="1.25" y="2.71" drill="0.95" shape="octagon"/>
-<pad name="S1" x="-6.02" y="0" drill="2.3" diameter="2.9"/>
-<pad name="S2" x="6.02" y="0" drill="2.3" diameter="2.9"/>
-<text x="-6.35" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="7.62" y="-8.89" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="ANGLE-1X6">
 <wire x1="-7.62" y1="-0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-0.635" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
@@ -1203,21 +1184,44 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <rectangle x1="3.429" y1="-1.651" x2="4.191" y2="-0.635" layer="21"/>
 <rectangle x1="5.969" y1="-1.651" x2="6.731" y2="-0.635" layer="21"/>
 </package>
+<package name="USB-MICRO-SMD-NO_CENTER-LONG_PADS">
+<text x="-4.66" y="5.96" size="0.3048" layer="51">PCB Front</text>
+<wire x1="-3" y1="5.6" x2="-2.3" y2="5.3" width="0.08" layer="51"/>
+<wire x1="-2.3" y1="5.3" x2="-2.4" y2="5.5" width="0.08" layer="51"/>
+<wire x1="-2.3" y1="5.3" x2="-2.5" y2="5.2" width="0.08" layer="51"/>
+<text x="-1.27" y="5.969" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.27" y="5.461" size="0.4064" layer="27">&gt;VALUE</text>
+<smd name="D+" x="3.1" y="0" dx="0.4" dy="2.2" layer="1" rot="R90"/>
+<smd name="D-" x="3.1" y="0.65" dx="0.4" dy="2.2" layer="1" rot="R90"/>
+<smd name="VUSB" x="3.1" y="1.3" dx="0.4" dy="2.2" layer="1" rot="R90"/>
+<smd name="ID" x="3.1" y="-0.65" dx="0.4" dy="2.2" layer="1" rot="R90"/>
+<smd name="GND" x="3.1" y="-1.3" dx="0.4" dy="2.2" layer="1" rot="R90"/>
+<hole x="2.2" y="2" drill="0.5"/>
+<hole x="2.2" y="-2" drill="0.5"/>
+<wire x1="-2.15" y1="3.9" x2="-2.15" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="2.85" y1="3.9" x2="2.85" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="2.85" y1="3.9" x2="-2.15" y2="3.9" width="0.127" layer="51"/>
+<wire x1="2.85" y1="-3.9" x2="-2.15" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="2.85" y1="1.8" x2="2.85" y2="3.9" width="0.3048" layer="21"/>
+<wire x1="2.85" y1="3.9" x2="1.1" y2="3.9" width="0.3048" layer="21"/>
+<wire x1="-1.1" y1="3.9" x2="-2" y2="3.9" width="0.3048" layer="21"/>
+<wire x1="-1.1" y1="-4" x2="-2" y2="-4" width="0.3048" layer="21"/>
+<smd name="P$1" x="0" y="4.1" dx="1.5" dy="2.6" layer="1"/>
+<smd name="P$2" x="0" y="-4.1" dx="1.5" dy="2.6" layer="1"/>
+<wire x1="2.85" y1="-3.9" x2="1.1" y2="-3.9" width="0.3048" layer="21"/>
+<wire x1="2.85" y1="-3.9" x2="2.85" y2="-1.8" width="0.3048" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
 <wire x1="-5.08" y1="-3.81" x2="0" y2="-3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="-3.81" x2="0" y2="6.35" width="0.254" layer="94"/>
 <wire x1="0" y1="6.35" x2="-5.08" y2="6.35" width="0.254" layer="94"/>
-<pin name="D+" x="2.54" y="0" visible="off" length="short" rot="R180"/>
-<pin name="D-" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="GND" x="2.54" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="VBUS" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="D+" x="2.54" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="D-" x="2.54" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="VBUS" x="2.54" y="5.08" visible="pad" length="short" rot="R180"/>
 <text x="-3.81" y="5.08" size="2.54" layer="94" rot="R270">USB</text>
-<text x="0.254" y="5.334" size="1.27" layer="97" font="vector" ratio="12">VBUS</text>
-<text x="0.254" y="2.794" size="1.27" layer="97" font="vector" ratio="12">D-</text>
-<text x="0.254" y="0.254" size="1.27" layer="97" font="vector" ratio="12">D+</text>
-<text x="0.254" y="-2.286" size="1.27" layer="97" font="vector" ratio="12">GND</text>
 </symbol>
 <symbol name="UART-6_PIN">
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
@@ -1317,12 +1321,12 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="B-SOCKET" package="PN61729-S">
+<device name="MICRO-NO_CENTER-LONG_PADS" package="USB-MICRO-SMD-NO_CENTER-LONG_PADS">
 <connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VBUS" pad="1"/>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VBUS" pad="VUSB"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2479,7 +2483,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="p.peter-passives" deviceset="INDUCTOR" device="0805" value=" 875-MI0805K601R-10"/>
-<part name="CON1" library="p.peter-connectors" deviceset="USB" device="MICRO-NO_CENTER"/>
+<part name="CON1" library="p.peter-connectors" deviceset="USB" device="MICRO-NO_CENTER-LONG_PADS" value="USBMICRO-NO_CENTER-LONG_PADS"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="p.peter-rcl" deviceset="R-EU_" device="R0603" value="27"/>
 <part name="R2" library="p.peter-rcl" deviceset="R-EU_" device="R0603" value="27"/>
