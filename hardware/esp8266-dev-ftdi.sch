@@ -3447,6 +3447,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="R13" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="540"/>
 <part name="LED-TX1" library="p.peter-leds" deviceset="LED" device="0805"/>
+<part name="C1" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="P+14" library="supply1" deviceset="+5V" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="C9" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="P+15" library="supply1" deviceset="+5V" device=""/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="C10" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="P+16" library="supply1" deviceset="+5V" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="C11" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="P+17" library="supply1" deviceset="+5V" device=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="C12" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="P+18" library="supply1" deviceset="+5V" device=""/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3471,7 +3486,6 @@ https://github.com/JustgeekDE
 
 v0.1 (8e144a9ffe)
 </text>
-<text x="86.36" y="83.82" size="5.08" layer="94">Do the WS2812b need caps?</text>
 </plain>
 <instances>
 <instance part="FT230" gate="G$1" x="55.88" y="38.1"/>
@@ -3585,6 +3599,21 @@ v0.1 (8e144a9ffe)
 <instance part="+3V9" gate="G$1" x="101.6" y="-33.02"/>
 <instance part="R13" gate="G$1" x="109.22" y="-66.04" rot="MR0"/>
 <instance part="LED-TX1" gate="G$1" x="119.38" y="-66.04"/>
+<instance part="C1" gate="G$1" x="81.28" y="137.16" rot="MR0"/>
+<instance part="P+14" gate="1" x="81.28" y="147.32"/>
+<instance part="GND25" gate="1" x="81.28" y="127"/>
+<instance part="C9" gate="G$1" x="106.68" y="137.16" rot="MR0"/>
+<instance part="P+15" gate="1" x="106.68" y="147.32"/>
+<instance part="GND26" gate="1" x="106.68" y="127"/>
+<instance part="C10" gate="G$1" x="137.16" y="137.16" rot="MR0"/>
+<instance part="P+16" gate="1" x="137.16" y="147.32"/>
+<instance part="GND27" gate="1" x="137.16" y="127"/>
+<instance part="C11" gate="G$1" x="167.64" y="137.16" rot="MR0"/>
+<instance part="P+17" gate="1" x="167.64" y="147.32"/>
+<instance part="GND28" gate="1" x="167.64" y="127"/>
+<instance part="C12" gate="G$1" x="198.12" y="137.16" rot="MR0"/>
+<instance part="P+18" gate="1" x="198.12" y="147.32"/>
+<instance part="GND29" gate="1" x="198.12" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -3740,6 +3769,31 @@ v0.1 (8e144a9ffe)
 <wire x1="78.74" y1="76.2" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND" gate="G$1" pin="TP"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="81.28" y1="132.08" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="106.68" y1="132.08" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="137.16" y1="132.08" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="167.64" y1="132.08" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="198.12" y1="132.08" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -3823,6 +3877,31 @@ v0.1 (8e144a9ffe)
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="5V" gate="G$1" pin="TP"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="P+14" gate="1" pin="+5V"/>
+<wire x1="81.28" y1="144.78" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
+<wire x1="106.68" y1="144.78" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="P+16" gate="1" pin="+5V"/>
+<wire x1="137.16" y1="144.78" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="P+17" gate="1" pin="+5V"/>
+<wire x1="167.64" y1="144.78" x2="167.64" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="P+18" gate="1" pin="+5V"/>
+<wire x1="198.12" y1="144.78" x2="198.12" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
