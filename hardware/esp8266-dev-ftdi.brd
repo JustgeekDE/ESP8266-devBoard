@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -32,15 +32,15 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -142,9 +142,9 @@ HERE</text>
 <text x="48.4" y="25" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">0</text>
 <text x="48.4" y="22.4" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">RX</text>
 <text x="47.2" y="18.8" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RES</text>
-<text x="25" y="46" size="1.7" layer="22" font="vector" ratio="15" rot="MR0" align="center">ESP 8266 
+<text x="17.6" y="36" size="1.7" layer="22" font="vector" ratio="15" rot="MR0">ESP 8266 
 dev board</text>
-<text x="15.3" y="44.4" size="1" layer="22" font="vector" ratio="12" rot="MR0" align="center">v0.1</text>
+<text x="44.3" y="5.6" size="1" layer="22" font="vector" ratio="12" rot="MR0" align="center">v0.1</text>
 <wire x1="25" y1="50" x2="11" y2="45.9" width="0" layer="20" curve="32.646094"/>
 <wire x1="11" y1="45.9" x2="9.5" y2="46.8" width="0" layer="20" curve="-127.219653"/>
 <wire x1="9.5" y1="46.8" x2="6.5" y2="50" width="0" layer="20" curve="95.451873"/>
@@ -975,25 +975,25 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C2" library="p.peter-rcl" package="C0805" value="10n" x="26.2" y="9.8" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="26.3" y="13.8" size="1.2" layer="28" font="vector" ratio="15" rot="SMR90" align="center"/>
+<attribute name="VALUE" x="26.3" y="13.8" size="1.2" layer="22" font="vector" ratio="15" rot="SMR90" align="center"/>
 </element>
 <element name="C3" library="p.peter-rcl" package="C0805" value="47p" x="21.8" y="19.4" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="20.2" y="17.5" size="1.2" layer="28" font="vector" ratio="15" rot="SMR0" align="center"/>
+<attribute name="VALUE" x="20.2" y="17.5" size="1.2" layer="22" font="vector" ratio="15" rot="SMR0" align="center"/>
 </element>
 <element name="C4" library="p.peter-rcl" package="C0805" value="47p" x="26.2" y="19.4" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="24.6" y="17.5" size="1.2" layer="28" font="vector" ratio="15" rot="SMR0" align="center"/>
+<attribute name="VALUE" x="24.6" y="17.5" size="1.2" layer="22" font="vector" ratio="15" rot="SMR0" align="center"/>
 </element>
 <element name="C5" library="p.peter-rcl" package="C0805" value="100n" x="18.4" y="27" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="18.5" y="31.4" size="1.2" layer="28" font="vector" ratio="15" rot="SMR90" align="center"/>
+<attribute name="VALUE" x="18.5" y="31.4" size="1.2" layer="22" font="vector" ratio="15" rot="SMR90" align="center"/>
 </element>
 <element name="C6" library="p.peter-rcl" package="C0805" value="4u7" x="16.2" y="27" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="16.3" y="31" size="1.2" layer="28" font="vector" ratio="15" rot="SMR90" align="center"/>
+<attribute name="VALUE" x="16.3" y="31" size="1.2" layer="22" font="vector" ratio="15" rot="SMR90" align="center"/>
 </element>
 <element name="C7" library="p.peter-rcl" package="C0805" value="10u" x="23" y="10.8" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="23" y="12.7" size="1.2" layer="28" font="vector" ratio="15" rot="SMR0" align="center"/>
+<attribute name="VALUE" x="23" y="12.7" size="1.2" layer="22" font="vector" ratio="15" rot="SMR0" align="center"/>
 </element>
 <element name="C8" library="p.peter-rcl" package="C0805" value="22u" x="12.2" y="10.2" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="11.3" y="14" size="1.2" layer="28" font="vector" ratio="15" rot="SMR90" align="center"/>
+<attribute name="VALUE" x="11.3" y="14" size="1.2" layer="22" font="vector" ratio="15" rot="SMR90" align="center"/>
 </element>
 <element name="CON1" library="p.peter-connectors" package="USB-MICRO-SMD-NO_CENTER-LONG_PADS" value="USBMICRO-NO_CENTER-LONG_PADS" x="25" y="2.5" smashed="yes" rot="R90"/>
 <element name="L1" library="p.peter-passives" package="R0805" value=" 875-MI0805K601R-10" x="23" y="8.6" smashed="yes" rot="MR0">
@@ -1006,28 +1006,28 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="36.1" y="7.8" size="0.7" layer="28" rot="MR0"/>
 </element>
 <element name="R1" library="p.peter-rcl" package="R0805" value="27" x="20.8" y="22.8" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="18.8" y="22.8" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="18.8" y="22.8" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R2" library="p.peter-rcl" package="R0805" value="27" x="27.2" y="22.8" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="25.2" y="22.8" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="25.2" y="22.8" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R3" library="p.peter-rcl" package="R0805" value="540" x="8.6" y="23.8" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="12.4" y="23.8" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="VALUE" x="12.4" y="23.8" size="1.2" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="R4" library="p.peter-rcl" package="R0805" value="540" x="8.6" y="21.2" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="12.2" y="20" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="VALUE" x="12.2" y="20" size="1.2" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="R5" library="p.peter-rcl" package="R0805" value="540" x="29.2" y="9.8" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="28.8" y="13.2" size="0.8" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="28.8" y="13.2" size="0.8" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R6" library="p.peter-rcl" package="R0805" value="10k" x="31.6" y="9.8" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="31.6" y="13.6" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="31.6" y="13.6" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R7" library="p.peter-rcl" package="R0805" value="2k" x="40.8" y="31.4" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="38.8" y="31.4" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="38.8" y="31.4" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="R8" library="p.peter-rcl" package="R0805" value="2k" x="34.6" y="13.2" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="34.6" y="15" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="VALUE" x="34.6" y="15" size="1.2" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="RF1" library="p.peter-periphery" package="ESP8266-ESP-01" value="" x="31.7" y="18.3" locked="yes" smashed="yes" rot="R135">
 <attribute name="VALUE" x="28.871571875" y="21.128425" size="0.8" layer="27" font="vector" ratio="12" rot="SR45" align="center"/>
@@ -1076,10 +1076,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="6.96776875" y="6.96776875" size="1.2" layer="25" font="vector" ratio="15" rot="SR315" align="center"/>
 </element>
 <element name="R9" library="p.peter-rcl" package="R0805" value="2k" x="34.4" y="5.4" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="34.4" y="3.4" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="VALUE" x="34.4" y="3.4" size="1.2" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="R10" library="p.peter-rcl" package="R0805" value="2k" x="9.8" y="10.2" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="9.6" y="13.6" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="9.6" y="13.6" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="SJ1" library="jumper" package="SJ" value="" x="23" y="3" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="23.4001" y="3" size="0.02" layer="28" rot="MR180"/>
@@ -1091,14 +1091,14 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="42.19" y="25" size="0.8" layer="28" font="vector" rot="MR90" align="center"/>
 </element>
 <element name="R11" library="p.peter-rcl" package="R0805" value="10k" x="29.6" y="22.8" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="29.6" y="26.6" size="1.2" layer="28" font="vector" ratio="15" rot="MR270" align="center"/>
+<attribute name="VALUE" x="29.6" y="26.6" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
 <element name="SLEEP" library="jumper" package="SJ" value="" x="8.6" y="17.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="7.451" y="15.743" size="1.2" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 <attribute name="VALUE" x="8.1999" y="17.8" size="0.02" layer="28" rot="MR0"/>
 </element>
 <element name="U$3" library="p.peter-doc" package="LOGO-JUSTGEEK-XS" value="" x="34" y="34"/>
-<element name="U$1" library="p.peter-doc" package="LOGO-JUSTGEEK-XS-PAD" value="" x="25" y="40" rot="MR0"/>
+<element name="U$1" library="p.peter-doc" package="LOGO-JUSTGEEK-XS-PAD" value="" x="39" y="39" rot="MR0"/>
 <element name="RTS" library="testpad" package="TP15R" value="TPSQTP15R" x="30.2" y="30.6" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="30.2" y="28.06" size="1" layer="38" rot="MR0"/>
 </element>
@@ -1133,19 +1133,25 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="43" y="29.86" size="1" layer="38" rot="MR0"/>
 </element>
 <element name="R12" library="p.peter-rcl" package="R0805" value="10k" x="38.3" y="17.4" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="38.3" y="15.2" size="1.2" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
+<attribute name="VALUE" x="38.3" y="15.2" size="1.2" layer="22" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
 <element name="R13" library="p.peter-rcl" package="R0805" value="540" x="25.6" y="36.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="25.6" y="34.2" size="1.2" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
+<attribute name="VALUE" x="25.6" y="34.2" size="1.2" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="LED-TX1" library="p.peter-leds" package="CHIPLED_0805" value="" x="30" y="38" smashed="yes" rot="R315">
 <attribute name="VALUE" x="30.898025" y="35.305921875" size="1.27" layer="27" rot="R45"/>
 </element>
-<element name="C1" library="p.peter-rcl" package="C0805" value="100n" x="45.1" y="34.6" rot="R225"/>
-<element name="C9" library="p.peter-rcl" package="C0805" value="100n" x="25" y="46" rot="MR180"/>
-<element name="C10" library="p.peter-rcl" package="C0805" value="100n" x="16" y="44" rot="MR157.5"/>
-<element name="C11" library="p.peter-rcl" package="C0805" value="100n" x="34" y="44" rot="MR202.5"/>
-<element name="C12" library="p.peter-rcl" package="C0805" value="100n" x="4.7" y="34.9" rot="R315"/>
+<element name="C1" library="p.peter-rcl" package="C0805" value="100n" x="45.1" y="34.6" smashed="yes" rot="R225"/>
+<element name="C9" library="p.peter-rcl" package="C0805" value="100n" x="25" y="46" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="25" y="44.2" size="1.2" layer="22" font="vector" ratio="15" rot="SMR0" align="center"/>
+</element>
+<element name="C10" library="p.peter-rcl" package="C0805" value="100n" x="16" y="44" smashed="yes" rot="MR157.5">
+<attribute name="VALUE" x="16.650559375" y="42.32940625" size="1.2" layer="22" font="vector" ratio="15" rot="SMR337.5" align="center"/>
+</element>
+<element name="C11" library="p.peter-rcl" package="C0805" value="100n" x="34" y="44" smashed="yes" rot="MR202.5">
+<attribute name="VALUE" x="33.3494375" y="42.32940625" size="1.2" layer="22" font="vector" ratio="15" rot="SMR22.5" align="center"/>
+</element>
+<element name="C12" library="p.peter-rcl" package="C0805" value="100n" x="4.7" y="34.9" smashed="yes" rot="R315"/>
 </elements>
 <signals>
 <signal name="GND">
