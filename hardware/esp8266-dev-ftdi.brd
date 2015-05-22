@@ -15,15 +15,15 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -32,15 +32,15 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -162,6 +162,7 @@ dev board</text>
 <wire x1="46.5" y1="47" x2="46.5" y2="39.5" width="0" layer="20"/>
 <wire x1="0" y1="25" x2="25" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="25" y1="0" x2="50" y2="25" width="0" layer="20" curve="90"/>
+<text x="4.5" y="52" size="1.778" layer="1">add notches for rubber bands</text>
 </plain>
 <libraries>
 <library name="p.peter-rcl">
@@ -1078,7 +1079,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="8.1999" y="17.8" size="0.02" layer="28" rot="MR0"/>
 </element>
 <element name="U$3" library="p.peter-doc" package="LOGO-JUSTGEEK-XS" value="" x="34" y="34"/>
-<element name="U$1" library="p.peter-doc" package="LOGO-JUSTGEEK-XS-PAD" value="" x="51" y="42" rot="MR0"/>
+<element name="U$1" library="p.peter-doc" package="LOGO-JUSTGEEK-XS-PAD" value="" x="25" y="40.5" rot="MR0"/>
 <element name="RTS" library="testpad" package="TP15R" value="TPSQTP15R" x="30.2" y="30.6" smashed="yes" rot="MR0">
 <attribute name="TP_SIGNAL_NAME" value="" x="30.2" y="28.06" size="1" layer="38" rot="MR0"/>
 </element>
@@ -1113,7 +1114,7 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="34.2" y="31.46" size="1" layer="38" rot="MR0"/>
 </element>
 <element name="R12" library="p.peter-rcl" package="R0805" value="10k" x="39.5" y="14" rot="MR180"/>
-<element name="R13" library="p.peter-rcl" package="R0805" value="10k" x="26.5" y="37" rot="MR270"/>
+<element name="R13" library="p.peter-rcl" package="R0805" value="10k" x="25" y="36" rot="MR180"/>
 <element name="LED-TX1" library="p.peter-leds" package="CHIPLED_0805" value="" x="30" y="38" rot="R315"/>
 </elements>
 <signals>
@@ -1801,7 +1802,7 @@ design rules under a new name.</description>
 <contactref element="R13" pad="2"/>
 <contactref element="FLASH" pad="P$2"/>
 <contactref element="FLASH" pad="P$1"/>
-<wire x1="30.1109125" y1="34.70710625" x2="26.5" y2="36.05" width="0" layer="19" extent="16-16"/>
+<wire x1="30.1109125" y1="34.70710625" x2="25.95" y2="36" width="0" layer="19" extent="16-16"/>
 <wire x1="34.70710625" y1="30.1109125" x2="30.1109125" y2="34.70710625" width="0" layer="19" extent="1-1"/>
 <wire x1="39.2" y1="28.6" x2="34.70710625" y2="30.1109125" width="0" layer="19" extent="1-1"/>
 <wire x1="38.55" y1="14" x2="38.8" y2="19" width="0" layer="19" extent="16-16"/>
@@ -1927,7 +1928,7 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="R13" pad="1"/>
 <contactref element="LED-TX1" pad="A"/>
-<wire x1="26.5" y1="37.95" x2="29.2575375" y2="37.2575375" width="0" layer="19" extent="1-16"/>
+<wire x1="24.05" y1="36" x2="29.2575375" y2="37.2575375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$11">
 <contactref element="R7" pad="1"/>
