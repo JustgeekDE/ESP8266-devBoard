@@ -3377,7 +3377,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="R5" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="150"/>
+<part name="R5" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="540"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="C7" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C8" library="p.peter-rcl" deviceset="C-EU" device="C0805" value="22u"/>
@@ -3445,7 +3445,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND" library="testpad" deviceset="TPSQ" device="TP15R"/>
 <part name="R12" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="R13" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="470"/>
+<part name="R13" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="540"/>
 <part name="LED-TX1" library="p.peter-leds" deviceset="LED" device="0805"/>
 </parts>
 <sheets>
@@ -3471,6 +3471,7 @@ https://github.com/JustgeekDE
 
 v0.1 (8e144a9ffe)
 </text>
+<text x="86.36" y="83.82" size="5.08" layer="94">Do the WS2812b need caps?</text>
 </plain>
 <instances>
 <instance part="FT230" gate="G$1" x="55.88" y="38.1"/>
