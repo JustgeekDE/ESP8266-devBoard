@@ -3455,7 +3455,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="2.54" y1="-88.9" x2="134.62" y2="-88.9" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="134.62" y1="-88.9" x2="134.62" y2="-15.24" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="134.62" y1="-15.24" x2="2.54" y2="-15.24" width="0.4064" layer="97" style="shortdash"/>
-<text x="-25.4" y="-17.78" size="3.81" layer="97" ratio="15" align="top-left">ESP 8266
+<text x="104.14" y="-17.78" size="3.81" layer="97" ratio="15" align="top-left">ESP 8266
 Interface</text>
 <text x="144.78" y="-17.78" size="3.81" layer="97" ratio="15" align="top-left">Power
 Supply</text>
@@ -3466,12 +3466,6 @@ https://github.com/JustgeekDE
 /ESP8266-devBoard
 
 v0.1 (8e144a9ffe)
-</text>
-<text x="180.34" y="-7.62" size="2.54" layer="97" ratio="12">TODO:
-- Footprints for 2mm V12, Breakoutboard
-- Prototype area with
-- Hooks for rubber band
-- Hole for lanyard
 </text>
 </plain>
 <instances>
