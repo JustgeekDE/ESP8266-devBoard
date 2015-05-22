@@ -6,23 +6,23 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -138,9 +138,9 @@ HERE</text>
 <text x="43.4" y="25" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">TX</text>
 <text x="43.2" y="22" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="bottom-center">3V3</text>
 <text x="44.8" y="18.6" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">16</text>
-<text x="48.4" y="27.6" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">2</text>
-<text x="48.4" y="25" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">0</text>
-<text x="48.4" y="22.4" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">RX</text>
+<text x="48.4" y="27.6" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">2</text>
+<text x="48.4" y="25" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">0</text>
+<text x="48.4" y="22.7" size="1" layer="22" font="vector" ratio="15" rot="MR270" align="top-center">RX</text>
 <text x="47.2" y="18.8" size="1.2" layer="22" font="vector" ratio="15" rot="MR270" align="center-left">RES</text>
 <text x="17.6" y="36" size="1.7" layer="22" font="vector" ratio="15" rot="MR0">ESP 8266 
 dev board</text>
@@ -792,32 +792,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="Elecrow_2-layer_eagle_rule *">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
-<description language="zh">&lt;b&gt;Elecrow EAGLE Design Rules&lt;/b&gt;
-</description>
+<designrules name="dirt_cheap_dirty_boards.v1 *">
+<description language="en">&lt;b&gt;Dirty Cheap Dirty Board Design Rules&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;Min width/Spacing: 5/5mil
+&lt;br&gt;Min diameter of finished hole 12mil</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="5mil"/>
+<param name="mdWirePad" value="5mil"/>
+<param name="mdWireVia" value="5mil"/>
+<param name="mdPadPad" value="5mil"/>
+<param name="mdPadVia" value="5mil"/>
+<param name="mdViaVia" value="5mil"/>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
 <param name="mdSmdSmd" value="0mil"/>
@@ -826,23 +814,23 @@ design rules under a new name.</description>
 <param name="mdCopperDimension" value="10mil"/>
 <param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="5mil"/>
 <param name="msDrill" value="12mil"/>
 <param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
+<param name="rvPadTop" value="0.3"/>
+<param name="rvPadInner" value="0.3"/>
+<param name="rvPadBottom" value="0.3"/>
 <param name="rvViaOuter" value="0.25"/>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
 <param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMaxPadTop" value="30mil"/>
 <param name="rlMinPadInner" value="10mil"/>
-<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMaxPadInner" value="30mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMaxPadBottom" value="30mil"/>
 <param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="6mil"/>
@@ -862,7 +850,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="100mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1769,7 +1757,6 @@ design rules under a new name.</description>
 <wire x1="33.50395" y1="20.09605" x2="32" y2="21.6" width="0.3" layer="16"/>
 <wire x1="32" y1="21.6" x2="31.4" y2="22.2" width="0.3" layer="16"/>
 <wire x1="29.55" y1="23.4" x2="29.6" y2="23.75" width="0.3" layer="16"/>
-<wire x1="37.124" y1="24.8" x2="37.2" y2="24.876" width="0.3" layer="16"/>
 <wire x1="42.4" y1="20.2" x2="35.39605" y2="20.2" width="0.3" layer="16"/>
 <wire x1="35.39605" y1="20.2" x2="35.2921" y2="20.09605" width="0.3" layer="16"/>
 <wire x1="44.73" y1="22.46" x2="44.66" y2="22.46" width="0.3" layer="16"/>
@@ -1805,6 +1792,8 @@ design rules under a new name.</description>
 <contactref element="R12" pad="2"/>
 <wire x1="42.4" y1="20.2" x2="39.6" y2="17.4" width="0.3" layer="16"/>
 <wire x1="39.6" y1="17.4" x2="39.25" y2="17.4" width="0.3" layer="16"/>
+<wire x1="37.124" y1="24.8" x2="37.2" y2="24.9" width="0.3" layer="16"/>
+<wire x1="37.2" y1="24.9" x2="37.2" y2="26.1" width="0.3" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="R5" pad="2"/>
@@ -2041,7 +2030,6 @@ design rules under a new name.</description>
 <wire x1="29.6" y1="28.9" x2="29" y2="29.5" width="0.3" layer="16"/>
 <wire x1="29" y1="29.5" x2="28.947" y2="29.553" width="0.3" layer="16"/>
 <wire x1="28.947" y1="29.553" x2="26.779" y2="29.553" width="0.3" layer="16"/>
-<wire x1="37.2" y1="24.8" x2="37.2" y2="26.4" width="0.3" layer="16"/>
 <contactref element="VCC" pad="TP"/>
 <wire x1="31.4" y1="28.8" x2="31.4" y2="27.4" width="0.3" layer="16"/>
 </signal>
@@ -2073,12 +2061,19 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="4,1,d105e89c14e62f23"/>
-<approved hash="4,1,ca500b95f5ec3675"/>
 <approved hash="19,16,fdac156eea8d92d7"/>
 <approved hash="19,16,aad1ea2b7d38aa3a"/>
 <approved hash="19,16,744b5a859694ae95"/>
 <approved hash="19,16,744b5a859694ae95"/>
+<approved hash="19,16,dc4e9d8bbfe0a403"/>
+<approved hash="19,16,3a4eb45c1c8f057d"/>
+<approved hash="19,16,0b75bc2095b50129"/>
+<approved hash="19,16,0b75bc2095b50129"/>
+<approved hash="4,1,d105e89c14e62f23"/>
+<approved hash="4,1,ca500b95f5ec3675"/>
+<approved hash="19,16,a1779baea1d1213d"/>
+<approved hash="19,16,ee284326bdc98727"/>
+<approved hash="19,16,95535e1edeb2882a"/>
 </errors>
 </board>
 </drawing>
