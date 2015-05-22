@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3387,7 +3387,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
-<part name="R7" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R7" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="2k"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="p.peter-connectors" deviceset="UART-6_PIN" device="GENERIC"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -3443,6 +3443,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="5V" library="testpad" deviceset="TPSQ" device="TP15R"/>
 <part name="3V3" library="testpad" deviceset="TPSQ" device="TP15R"/>
 <part name="GND" library="testpad" deviceset="TPSQ" device="TP15R"/>
+<part name="R12" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="R13" library="p.peter-rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="LED-TX1" library="p.peter-leds" deviceset="LED" device="0805"/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3576,6 +3581,11 @@ v0.1 (8e144a9ffe)
 <instance part="5V" gate="G$1" x="68.58" y="71.12"/>
 <instance part="3V3" gate="G$1" x="73.66" y="71.12"/>
 <instance part="GND" gate="G$1" x="78.74" y="71.12"/>
+<instance part="R12" gate="G$1" x="106.68" y="-50.8"/>
+<instance part="+3V9" gate="G$1" x="114.3" y="-45.72"/>
+<instance part="R13" gate="G$1" x="124.46" y="-73.66" rot="MR0"/>
+<instance part="LED-TX1" gate="G$1" x="129.54" y="-81.28" rot="R270"/>
+<instance part="GND25" gate="1" x="132.08" y="-88.9"/>
 </instances>
 <busses>
 </busses>
@@ -3725,6 +3735,11 @@ v0.1 (8e144a9ffe)
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="78.74" y1="76.2" x2="78.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND" gate="G$1" pin="TP"/>
+</segment>
+<segment>
+<pinref part="LED-TX1" gate="G$1" pin="C"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="132.08" y1="-86.36" x2="129.54" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -4072,6 +4087,12 @@ v0.1 (8e144a9ffe)
 <wire x1="73.66" y1="76.2" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="3V3" gate="G$1" pin="TP"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="111.76" y1="-50.8" x2="114.3" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-50.8" x2="114.3" y2="-48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$9" class="0">
 <segment>
@@ -4155,11 +4176,19 @@ v0.1 (8e144a9ffe)
 <segment>
 <pinref part="RF1" gate="G$1" pin="GPIO0"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-58.42" x2="99.06" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-58.42" x2="96.52" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="-58.42" x2="93.98" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="-58.42" x2="96.52" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-58.42" x2="96.52" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="96.52" y="-58.42"/>
-<label x="96.52" y="-55.88" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="96.52" y="-48.26" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="-50.8" x2="96.52" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="-50.8" x2="99.06" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-50.8" x2="96.52" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="-58.42" x2="109.22" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-66.04" x2="119.38" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
@@ -4265,6 +4294,13 @@ v0.1 (8e144a9ffe)
 <pinref part="U$2" gate="G$1" pin="DTR"/>
 <pinref part="SLEEP" gate="1" pin="2"/>
 <wire x1="160.02" y1="20.32" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="LED-TX1" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="-78.74" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
