@@ -10,3 +10,5 @@ However the AVR-CDC firmware is only reliable up to 4800 baud and can't reliably
 This is a small badge-like breakout board with onboard RGB LEDs. The aim of this board is to provide an easy to use playground for the V-01 version of the ESP 8266 module, while still being able to be used as a general interface board.
 
 The chip reset of the ESP8266 is only released after the 500mA has been successfully negotiated.
+
+Since a FT230X is used, the UART interface is lacking the DTR signal.
