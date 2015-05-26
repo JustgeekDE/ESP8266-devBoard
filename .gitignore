@@ -12,3 +12,4 @@ hardware/eagle.epf
 *.gpi
 *.dri
 .DS_Store
+*.scr
