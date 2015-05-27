@@ -12,7 +12,7 @@ router.get("/sinceId", function(request, response) {
   var queryObject = url.parse(request.url,true).query;
 
   var result = 0;
-  var startId = queryObject['id'];
+  var startId = queryObject['since'];
   var tag = queryObject['tag'];
 
   if(typeof startId === 'undefined') {
@@ -20,12 +20,29 @@ router.get("/sinceId", function(request, response) {
   }
 
   if(typeof tag !== 'undefined') {
-    T.get('search/tweets', { q: tag, since_id:startId, count: 2 }, function(err, data, res) {
-      console.log(data['statuses'].length);
-      response.end('len: ' + data['statuses'].length);
+    var searchOptions = {
+      q: tag,
+      since_id: startId,
+      count: 100,
+      result_type: 'recent',
+      include_entities: 0
+    };
+
+    T.get('search/tweets', searchOptions, function(err, data, res) {
+      var result = {
+        length: data['statuses'].length,
+         maxId: data['search_metadata']['max_id']
+      }
+      response.end(JSON.stringify(result));
+      // console.log(data)
     });
   } else {
-    response.end("0");
+    var result = {
+      length: 0,
+       maxId: 0,
+       error: 'no tag'
+    }
+    response.end(JSON.stringify(result));
   }
 });
 
