@@ -14,5 +14,6 @@ hardware/eagle.epf
 .DS_Store
 *.scr
 
-**/npm-debug.logy
+**/npm-debug.log
+**/config.js
 code/twitterLight/server/node_modules/
