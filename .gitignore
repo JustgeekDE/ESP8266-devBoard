@@ -13,3 +13,5 @@ hardware/eagle.epf
 *.dri
 .DS_Store
 *.scr
+
+code/twitterLight/server/node_modules/
