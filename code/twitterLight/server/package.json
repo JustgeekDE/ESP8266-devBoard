@@ -1,0 +1,19 @@
+{
+  "name": "twitter-search",
+  "version": "0.0.1",
+  "description": "a search engine for twitter hash tags",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twluna/fake-machine.git"
+  },
+  "dependencies": {
+    "basic-auth": "^1.0.0",
+    "exec-plan": "0.0.3",
+    "node-simple-router": "^0.9.2-8",
+    "request": "^2.44.0",
+    "tv4": "^1.1.0"
+  }
+}
