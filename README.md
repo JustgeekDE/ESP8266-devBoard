@@ -13,5 +13,6 @@ The chip reset of the ESP8266 is only released after the 500mA has been successf
 
 Since a FT230X is used, the UART interface is lacking the DTR signal.
 
-## Notes
-- The USB socket on the ftdi board is a bit to far away from the board edge
+## Errata
+- The USB socket on v0.1 of the FTDI board is a bit to far away from the board edge
+- The RX and TX Leds on v0.1 of the FTDI board should be tied to VCC instead of GND
