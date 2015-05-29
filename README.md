@@ -12,3 +12,6 @@ This is a small badge-like breakout board with onboard RGB LEDs. The aim of this
 The chip reset of the ESP8266 is only released after the 500mA has been successfully negotiated.
 
 Since a FT230X is used, the UART interface is lacking the DTR signal.
+
+## Notes
+- The USB socket on the ftdi board is a bit to far away from the board edge
