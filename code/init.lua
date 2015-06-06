@@ -6,6 +6,8 @@ counter = 0
 gpio.mode(buttonPin, gpio.OUTPUT, gpio.PULLUP)
 ws2812.writergb(rgbPin,string.char(0, 0, 0):rep(5))
 
+print(wifi.sta.getmac())
+ 
 tmr.stop(timerId)
 tmr.alarm(timerId, 500, 1, function()
   if counter < 5 then
@@ -16,6 +18,7 @@ tmr.alarm(timerId, 500, 1, function()
   end
   if gpio.read(buttonPin) == 0 then
     counter = 0
+    print(wifi.sta.getmac())
     ws2812.writergb(rgbPin,string.char(0, 0, 0):rep(5))
   end
 end )
